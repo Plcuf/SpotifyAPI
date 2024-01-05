@@ -1,0 +1,426 @@
+{
+	"info": {
+		"_postman_id": "e95ef45f-c593-4052-80e2-9f1502016308",
+		"name": "Spotify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32084871"
+	},
+	"item": [
+		{
+			"name": "Q1",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spotify.com/v1/search?q=jul&type=artist&market=FR&limit=3",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "jul"
+						},
+						{
+							"key": "type",
+							"value": "artist"
+						},
+						{
+							"key": "market",
+							"value": "FR"
+						},
+						{
+							"key": "limit",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q2",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spotify.com/v1/artists/3IW7ScrzXmPvZhB27hmfgy/albums",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"artists",
+						"3IW7ScrzXmPvZhB27hmfgy",
+						"albums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q3",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spotify.com/v1/albums/1WYGwCvsfFrr7kuQcfNnJr/tracks?limit=5",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"albums",
+						"1WYGwCvsfFrr7kuQcfNnJr",
+						"tracks"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q4",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spotify.com/v1/tracks/7sZas5ww0qoNF9B5B8ebir",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"tracks",
+						"7sZas5ww0qoNF9B5B8ebir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q5",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg/top-tracks?market=FR",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"artists",
+						"0TnOYISbd1XYRBk9myaseg",
+						"top-tracks"
+					],
+					"query": [
+						{
+							"key": "market",
+							"value": "FR"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q6",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spotify.com/v1/tracks/0EzNyXyU7gHzj2TN8qYThj?market=FR",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"tracks",
+						"0EzNyXyU7gHzj2TN8qYThj"
+					],
+					"query": [
+						{
+							"key": "market",
+							"value": "FR"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q7",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spotify.com/v1/search?q=%E2%80%9CLes+actus+du+jour+-+Hugo+d%C3%A9crypte&type=show&market=FR&limit=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "%E2%80%9CLes+actus+du+jour+-+Hugo+d%C3%A9crypte"
+						},
+						{
+							"key": "type",
+							"value": "show"
+						},
+						{
+							"key": "market",
+							"value": "FR"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q8",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spotify.com/v1/shows/6y1PloEyNsCNJH9vHias4T/episodes?limit=3",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"shows",
+						"6y1PloEyNsCNJH9vHias4T",
+						"episodes"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q9",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.spotify.com/v1/shows/6y1PloEyNsCNJH9vHias4T/episodes?limit=1&offset=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"spotify",
+						"com"
+					],
+					"path": [
+						"v1",
+						"shows",
+						"6y1PloEyNsCNJH9vHias4T",
+						"episodes"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "offset",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "accessTokenUrl",
+				"value": "https://accounts.spotify.com/api/token",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "91358e737e5245ce8f28b44cc8f9ffc1",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "9bd2f253c4c04f6ca2eeb009d9127326",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "client_credentials",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "SpotifyToken",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
